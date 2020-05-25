@@ -1,0 +1,43 @@
+﻿@model CourtCasesSystem.Models.HearingMst
+
+@{
+    //Layout = null;
+}
+
+
+
+    <div>
+        <h4>HearingMst</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CaseMst.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CaseMst.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CurrentDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CurrentDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NextDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NextDate)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+

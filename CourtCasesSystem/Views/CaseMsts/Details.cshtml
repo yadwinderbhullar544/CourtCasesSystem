@@ -1,0 +1,66 @@
+﻿@model CourtCasesSystem.Models.CaseMst
+
+@{
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>CaseMst</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.JudgeMst.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.JudgeMst.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.LawyerMst.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.LawyerMst.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PartyMst.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PartyMst.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
